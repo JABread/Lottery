@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CQU-od-lJv">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Lottery View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LotteryViewController" customModule="Lottery" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hlm-uC-X7d">
+                                <rect key="frame" x="0.0" y="64" width="375" height="200"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="奖池金额：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uch-Qa-L7i">
+                                        <rect key="frame" x="81" y="11" width="87" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ton-Nb-UPJ">
+                                        <rect key="frame" x="181" y="11" width="49" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="一等奖：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ee9-TK-cN3">
+                                        <rect key="frame" x="98" y="59" width="70" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1名 x 5000￥" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3IY-qq-OUV">
+                                        <rect key="frame" x="181" y="59" width="101" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="二奖金：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f7c-QA-nro">
+                                        <rect key="frame" x="98" y="109" width="70" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10名 x 500￥" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1LW-u9-kCw">
+                                        <rect key="frame" x="181" y="109" width="101" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="开奖倒计时：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M6z-2b-ffB">
+                                        <rect key="frame" x="64" y="154" width="104" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QrI-8T-TiV">
+                                        <rect key="frame" x="181" y="154" width="18" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="3IY-qq-OUV" firstAttribute="leading" secondItem="1LW-u9-kCw" secondAttribute="leading" id="2qM-3i-cFK"/>
+                                    <constraint firstItem="f7c-QA-nro" firstAttribute="baseline" secondItem="1LW-u9-kCw" secondAttribute="baseline" id="3SA-Oa-1GP"/>
+                                    <constraint firstItem="1LW-u9-kCw" firstAttribute="leading" secondItem="QrI-8T-TiV" secondAttribute="leading" id="8UP-AY-kpR"/>
+                                    <constraint firstItem="ton-Nb-UPJ" firstAttribute="leading" secondItem="uch-Qa-L7i" secondAttribute="trailing" constant="13" id="CIZ-qb-J1U"/>
+                                    <constraint firstItem="ee9-TK-cN3" firstAttribute="top" secondItem="uch-Qa-L7i" secondAttribute="bottom" constant="27" id="FYN-Ym-K8C"/>
+                                    <constraint firstItem="f7c-QA-nro" firstAttribute="top" secondItem="ee9-TK-cN3" secondAttribute="bottom" constant="29" id="HQd-k9-V0D"/>
+                                    <constraint firstItem="M6z-2b-ffB" firstAttribute="leading" secondItem="hlm-uC-X7d" secondAttribute="leading" constant="64" id="KGS-va-gxJ"/>
+                                    <constraint firstItem="M6z-2b-ffB" firstAttribute="baseline" secondItem="QrI-8T-TiV" secondAttribute="baseline" id="LZE-zv-WE8"/>
+                                    <constraint firstItem="uch-Qa-L7i" firstAttribute="baseline" secondItem="ton-Nb-UPJ" secondAttribute="baseline" id="MlS-cl-Hgg"/>
+                                    <constraint firstItem="ee9-TK-cN3" firstAttribute="baseline" secondItem="3IY-qq-OUV" secondAttribute="baseline" id="OGB-bn-bRT"/>
+                                    <constraint firstAttribute="height" constant="200" id="Oai-Xz-7CG"/>
+                                    <constraint firstItem="f7c-QA-nro" firstAttribute="trailing" secondItem="M6z-2b-ffB" secondAttribute="trailing" id="Puu-hI-1pG"/>
+                                    <constraint firstItem="uch-Qa-L7i" firstAttribute="top" secondItem="hlm-uC-X7d" secondAttribute="top" constant="11" id="fFY-xt-oOS"/>
+                                    <constraint firstItem="uch-Qa-L7i" firstAttribute="trailing" secondItem="ee9-TK-cN3" secondAttribute="trailing" id="gYj-eR-Ckf"/>
+                                    <constraint firstItem="M6z-2b-ffB" firstAttribute="top" secondItem="f7c-QA-nro" secondAttribute="bottom" constant="24" id="l53-0c-mOg"/>
+                                    <constraint firstItem="ee9-TK-cN3" firstAttribute="leading" secondItem="f7c-QA-nro" secondAttribute="leading" id="wcc-0V-QPZ"/>
+                                    <constraint firstItem="ton-Nb-UPJ" firstAttribute="leading" secondItem="3IY-qq-OUV" secondAttribute="leading" id="yOp-fb-RIU"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Akw-mF-NSb">
+                                <rect key="frame" x="0.0" y="264" width="375" height="403"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Akw-mF-NSb" firstAttribute="top" secondItem="hlm-uC-X7d" secondAttribute="bottom" id="LIy-dY-OQ0"/>
+                            <constraint firstItem="Akw-mF-NSb" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Nu3-hX-vsL"/>
+                            <constraint firstItem="hlm-uC-X7d" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="WOU-wJ-jL4"/>
+                            <constraint firstItem="hlm-uC-X7d" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="cMv-uA-wie"/>
+                            <constraint firstItem="Akw-mF-NSb" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="eQ5-T1-xdh"/>
+                            <constraint firstItem="hlm-uC-X7d" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pzM-Sy-TIC"/>
+                            <constraint firstItem="Akw-mF-NSb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vA6-Ro-bVL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="B9R-hj-BeF">
+                        <barButtonItem key="rightBarButtonItem" title="下注" id="xep-jy-gzH">
+                            <connections>
+                                <action selector="bet:" destination="BYZ-38-t0r" id="hIl-H7-7JA"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="bonusLabel" destination="ton-Nb-UPJ" id="yHP-OI-nnI"/>
+                        <outlet property="tableView" destination="Akw-mF-NSb" id="gWz-ho-MB3"/>
+                        <outlet property="timeLabel" destination="QrI-8T-TiV" id="Jxj-w4-eTL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="333.60000000000002" y="116.49175412293854"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6Ky-f2-BHG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CQU-od-lJv" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sb0-0o-iCe">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="MnP-gs-OHX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="USU-SQ-HfC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-295" y="118"/>
+        </scene>
+    </scenes>
+</document>
