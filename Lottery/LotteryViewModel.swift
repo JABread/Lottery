@@ -11,14 +11,14 @@ import Foundation
 class LotteryViewModel {
     // 奖金
     private(set) var bonus = Bindable(Constant.initialBonus)
-    // 期号
-    private(set) var period = Bindable(0)
     // 往期中奖纪录
     private(set) var shotRecords: Bindable<[LotteryRecord]> = Bindable([])
     // time
     private(set) var time = Bindable(Constant.countDownTime)
+    // 期号
+    private var period = 0
     // 当前抽奖情况
-    private(set) var curBets = [LotteryBet]()
+    private var curBets = [LotteryBet]()
     // 常量
     private struct Constant {
         static let shotSecondNum = 10
@@ -39,12 +39,12 @@ extension LotteryViewModel {
         let lotteryId = getRandomLotteryId()
         var res = Set<LotteryBet>()
         lock.lock()
-        while count != 0 && !res.contains(LotteryBet(period: period.value, lotteryId: lotteryId)) {
-            let record = LotteryBet(period: period.value, lotteryId: lotteryId)
+        while count != 0 && !res.contains(LotteryBet(period: period, lotteryId: lotteryId)) {
+            let record = LotteryBet(period: period, lotteryId: lotteryId)
             res.insert(record)
             count -= 1
         }
-        curBets.append(LotteryBet(period: period.value, lotteryId: lotteryId))
+        curBets.append(LotteryBet(period: period, lotteryId: lotteryId))
         bonus.value += RMB
         lock.unlock()
         return res
@@ -63,15 +63,14 @@ extension LotteryViewModel {
 
             let firstBet = shotFirstPrice()
             let shotSecond = shotSecondPrice()
-            let record = LotteryRecord(period: period.value, first: firstBet, second: shotSecond, bets: curBets)
+            let record = LotteryRecord(period: period, first: firstBet, second: shotSecond, bets: curBets)
             shotRecords.value.append(record)
 
             bonus.value = bonus.value - (1 * 5000 + 10 * 500)
 
             time.value = Constant.countDownTime
-            period.value += 1
+            period += 1
             curBets.removeAll()
-
 
             return record
         } else {
