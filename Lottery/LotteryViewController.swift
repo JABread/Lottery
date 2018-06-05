@@ -48,7 +48,11 @@ class LotteryViewController: UIViewController {
     }
 
     @IBAction func bet(_ sender: Any) {
-        lotteryVM.bet(2)
+        let bet = lotteryVM.bet(2)
+        let alertVc = UIAlertController(title: "下注期号: \(String(describing: bet.first!.period))", message: "号码: \(String(describing: bet.first!.lotteryId))", preferredStyle: UIAlertControllerStyle.actionSheet)
+        let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil)
+        alertVc.addAction(okAction)
+        present(alertVc, animated: true, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {
